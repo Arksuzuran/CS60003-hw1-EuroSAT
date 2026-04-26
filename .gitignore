@@ -1,6 +1,6 @@
 __pycache__/
 .history/
 EuroSAT_RGB/
-hw1.pdf/
+*.pdf/
 lr*
 !runs/lr0.01_h512_wd0.0001
