@@ -1,7 +1,5 @@
 # CS60003-hw1-EuroSAT
 
-
-
 ### 环境依赖
 
 ```
@@ -40,6 +38,14 @@ python main.py --mode search
 ```
 
 #### 模型测试与可视化
+
+模型权重使用 Git LFS 管理, 使用git lfs拉取`ckpt`文件：
+
+```
+git lfs install
+git lfs pull --include="runs/lr0.01_h512_wd0.0001/best_model.pkl"
+```
+
 输出目录为`runs/lr0.01_h512_wd0.0001`
 ```
 python main.py --mode test --weight_path ./runs/lr0.01_h512_wd0.0001/best_model.pkl
